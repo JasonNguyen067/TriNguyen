@@ -1,18 +1,20 @@
 import type { Metadata } from "next";
-import { Space_Mono, JetBrains_Mono } from "next/font/google";
+import { Cormorant_Garamond, IBM_Plex_Mono } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/layout/Navbar";
+import AmbientAudio from "@/components/layout/AmbientAudio";
 
-const spaceMono = Space_Mono({
-  variable: "--font-space-mono",
+const cormorantGaramond = Cormorant_Garamond({
+  variable: "--font-cormorant-garamond",
   subsets: ["latin"],
-  weight: ["400", "700"],
+  weight: ["400", "500", "600", "700"],
+  style: ["normal", "italic"],
 });
 
-const jetbrainsMono = JetBrains_Mono({
-  variable: "--font-jetbrains-mono",
+const ibmPlexMono = IBM_Plex_Mono({
+  variable: "--font-ibm-plex-mono",
   subsets: ["latin"],
-  weight: ["400", "500", "700"],
+  weight: ["400", "500", "600"],
 })
 
 export const metadata: Metadata = {
@@ -28,10 +30,13 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${spaceMono.variable} ${jetbrainsMono.variable} h-full antialiased`}
+      className={`${cormorantGaramond.variable} ${ibmPlexMono.variable} h-full antialiased`}
     >
-      <Navbar/>
-      <body className="min-h-full flex flex-col">{children}</body>
+      <body className="min-h-full flex flex-col">
+        <AmbientAudio />
+        <Navbar/>
+        {children}
+      </body>
     </html>
   );
 }
