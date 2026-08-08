@@ -1,56 +1,85 @@
 import type { Moment } from "@/types/moment";
 
-// TODO: swap these for the real photos once they're in /public
+// TODO: drop the real tracks in /public and point `song` at them.
+// Any card without a `song` simply ignores the double-click.
 export const moments: Moment[] = [
   {
     id: "usaa",
     date: "Summer 2026",
-    title: "USAA — Plano, Texas",
+    title: "USAA, San Antonio Trip",
     description:
-      "Built internal developer tooling for messaging infrastructure used by thousands.",
-    image: "/portfolioimage.png",
+      "business expense",
+    image: "/sanantoniointerns.png",
+    song: "/Clouds.mp3",
+  },
+  {
+    id: "riverwalk",
+    date: "Summer 2026",
+    title: "San Antonio Riverwalk",
+    description: "exploring",
+    image: "/riverwalksanantonio.png",
   },
   {
     id: "fusion",
-    date: "April 2025",
-    title: "Fusion Hackathon",
+    date: "April 2026",
+    title: "Fusion ICS Project",
     description:
-      "Led an 8-person team to design and ship a full-stack solution in 36 hours.",
-    image: "/portfolioimage.png",
+      "led an 8-person team to design and ship a full-stack app over the course of 9 months, best ux award",
+    image: "/fusionspeaking.png",
   },
   {
-    id: "newport",
-    date: "March 2025",
-    title: "Newport Beach",
-    description: "Some of my best ideas don't happen behind a monitor.",
-    image: "/portfolioimage.png",
+    id: "cutie-hacks-win",
+    date: "April 2025",
+    title: "Best Social Impact",
+    description:
+      "first hackathon win!",
+    image: "/hackathonwin.png",
+    // the award slide sits just left of center
+    imagePosition: "44% 40%",
   },
   {
-    id: "discipline",
-    date: "Every morning",
-    title: "Discipline > Motivation",
-    description: "The gym reminds me that consistency compounds in everything.",
-    image: "/portfolioimage.png",
+    id: "michigan",
+    date: "Summer 2024",
+    title: "Last Time in Michigan",
+    description:
+      "the beginning of the end",
+    image: "/lasttimeinmichigan.png",
   },
   {
-    id: "next",
-    date: "Future",
-    title: "What's Next",
-    description: "More places, more problems, more impact.",
-    image: "/portfolioimage.png",
+    id: "crystal-cove",
+    date: "March 2026",
+    title: "Crystal Cove",
+    description: "whatta beaut",
+    image: "/crystalcovebeach.png",
   },
   {
-    id: "first-commit",
-    date: "January 2024",
-    title: "First Real Commit",
-    description: "The project that made version control finally click for me.",
-    image: "/portfolioimage.png",
+    id: "laguna-spot",
+    date: "2025",
+    title: "The Laguna Spot",
+    description: "motivating",
+    image: "/lagunabeachspot.png",
   },
   {
-    id: "late-nights",
-    date: "Ongoing",
-    title: "Late Nights",
-    description: "Most of the learning happens well after everyone logs off.",
-    image: "/portfolioimage.png",
+    id: "laguna-purple",
+    date: "2025",
+    title: "Laguna, Purple Hour",
+    description: "sunrise",
+    image: "/lagunabeachpurple.png",
+  },
+  {
+    id: "jason-kevin",
+    date: "December 2024",
+    title: "Good Company",
+    description: "brotha",
+    image: "/jasonkevinbeach.png",
+    // center sits in the gap between you two — shift right to catch both
+    imagePosition: "60% 45%",
+  },
+  {
+    id: "sand-dune",
+    date: "2025",
+    title: "Sand Dunes",
+    description: "sunrise",
+    image: "/sanddune.png",
   },
 ];
