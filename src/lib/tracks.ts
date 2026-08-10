@@ -74,7 +74,7 @@ export const tracks: Track[] = [
   },
   {
     id: "illness",
-    title: "Illness",
+    title: "The Illness",
     artist: "Love Spells",
     src: "/audio/illness.mp3",
     art: "/covers/illness.png",

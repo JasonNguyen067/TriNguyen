@@ -58,8 +58,8 @@ export const goalGroups: GoalGroup[] = [
         target: "1–2 / day",
         horizon: "every day",
         note:
-          "one or two commits a day on something real, not a streak farm. " +
-          "the rule exists so i open the editor on the days i don't feel like it — that's the only day it matters.",
+          "one or two commits a day, 30 minutes of coding minimum. " +
+          "spaced repetition and the law of accumulation — small reps every day beat one long session on the weekend.",
       },
       {
         id: "leetcode-800",
@@ -82,8 +82,7 @@ export const goalGroups: GoalGroup[] = [
         horizon: "this year",
         note:
           "some days i don't study at all to relax, then i sit down for four or five hours to make up the lost time. " +
-          "the weekly total looks fine on paper and almost none of it sticks. " +
-          "it already cost me michigan once — i want the boring version instead, a set block every day whether or not there's anything due.",
+          "the weekly total looks fine on paper and almost none of it sticks.",
       },
     ],
   },

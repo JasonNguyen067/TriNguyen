@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 import ProjectEntry from "@/components/ui/ProjectEntry";
+import { navNumber } from "@/lib/navigation";
 import { projects } from "@/lib/projects";
 
 export const metadata: Metadata = {
-  title: "Work — Jason Nguyen",
   description: "Projects I've built, and what came out of them.",
 };
 
@@ -14,9 +14,11 @@ export default function ProjectsPage() {
   return (
     <main className="pt-24">
       <section className="px-6 py-24 lg:px-12">
-        <span className="mb-1 block text-xs text-orange-400">02</span>
+        <span className="mb-1 block text-xs text-orange-400">
+          {navNumber("/projects")}
+        </span>
         <h1 className="mb-3 font-heading text-5xl text-foreground">Work</h1>
-        <p className="mb-20 max-w-xl text-sm leading-relaxed text-foreground/45">
+        <p className="mb-16 max-w-xl text-sm leading-relaxed text-foreground/45">
           Things I&apos;ve built — open source, hackathons, and a personal
           project or two. Numbers where there are numbers.
         </p>

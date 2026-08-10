@@ -7,10 +7,11 @@ export const principles: Principle[] = [
     title: "depth",
     thesis: "the man who chases two rabbits catches neither",
     note:
-      "malcom gladwell — 10,000 hours in one niche, " +
+      "malcolm gladwell — 10,000 hours in one niche, " +
       "i joined every club i could my first two years and came out with surface level knowledge and connections. " +
       "the people who picked their niche came out with mastery. " +
-      "some with research, others a network, and incredible technical depth.",
+      "some with research, others a network, and incredible technical depth. " +
+      "i want to pick the one thing i'm actually interested in and go extremely deep on just that.",
   },
   {
     id: "consistency",
@@ -18,9 +19,12 @@ export const principles: Principle[] = [
     thesis:
       "the law of accumulation",
     note:
-      "kobe bryant put it best, if you have 3 workout sessions a day, for a year, you have beaten your opponent " +
-      "by 300+ workouts in a year, in a couple the lead will be so far aheda that it will be impossible for them to have" + 
-      "caught up"
+      "kobe laid out the whole argument as a schedule. " +
+      "wake up at 3, train 4 to 6. " +
+      "come home, eat breakfast, relax. " +
+      "back at it 9 to 11, again 2 to 4, again 7 to 9. " +
+      "three sessions a day for a year is 600 more than the guy training once. " +
+      "by year five or six it doesn't matter what kind of work they do in the summer — they're never gonna catch up.",
   },
   {
     id: "belief",
@@ -35,7 +39,7 @@ export const principles: Principle[] = [
   {
     id: "honesty",
     title: "honesty",
-    thesis: "You can't fix what you won't name.",
+    thesis: "you can't grow without accepting your flaws",
     note:
       "one of my closest friends and i both got waitlisted at michigan. " +
       "same gpa, same ap load, same odds on paper. " +

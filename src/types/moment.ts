@@ -10,6 +10,12 @@ export type Moment = {
    * pick which part survives. Defaults to dead center.
    */
   imagePosition?: string;
+  /**
+   * "contain" shrinks the photo until all of it fits, letterboxed against the
+   * card. Use it for wide group shots where cropping would cut people out.
+   * Defaults to "cover", which fills the card and crops.
+   */
+  imageFit?: "cover" | "contain";
   /** optional track in /public — double-clicking the card plays it */
   song?: string;
 };
