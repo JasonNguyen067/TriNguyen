@@ -2,6 +2,17 @@ import type { JournalEntry } from "@/types/journal";
 
 const entries: JournalEntry[] = [
   {
+    slug: "health",
+    date: "2026-09-07",
+    title: "coming soon",
+    summary:
+      "coming soon",
+      tags: ["growth", "reflection"],
+      body: [
+        "coming soon"
+      ],
+  },
+  {
     slug: "growth",
     date: "2026-08-07",
     title: "texas",
@@ -12,6 +23,12 @@ const entries: JournalEntry[] = [
         "this internship brought back what i needed mentally. " +
           "sleeping early, following a structured routine, " +
           "and being around great people every day showed me how much an environment shapes who you become.",
+
+        "i haven't been in this structured of a routine, " +
+        "waking up at the same time, eating at the same time, " +
+        "working at the same time since freshman year of high school, " +
+        "it returned the memory of when i was able to effortlessly " +
+        "learn things without intense focus",
 
         "i felt the mental gains climb. " +
           "i became much calmer, able to think through my thoughts and my decisions again.",

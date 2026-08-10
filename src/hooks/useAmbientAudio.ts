@@ -13,7 +13,7 @@ const ACTIVATION_EVENTS = ["pointerdown", "keydown", "touchstart"] as const;
 
 /** double-clicks landing on any of these belong to the page, not the toggle */
 const INTERACTIVE_SELECTOR =
-  "button, a, input, textarea, select, article, [role='button'], [data-no-audio-toggle]";
+  "button, a, input, textarea, select, [role='button'], [data-no-audio-toggle]";
 
 export type UseAmbientAudioResult = {
   audioRef: RefObject<HTMLAudioElement | null>;
@@ -24,8 +24,10 @@ export type UseAmbientAudioResult = {
 /**
  * Starts muted (the only autoplay browsers allow), unmutes on the visitor's
  * first gesture, then lets a double-click on empty space toggle sound.
+ *
+ * @param src the track to play — changing it swaps tracks mid-session
  */
-export function useAmbientAudio(): UseAmbientAudioResult {
+export function useAmbientAudio(src: string): UseAmbientAudioResult {
   const audioRef = useRef<HTMLAudioElement>(null);
   const activatedAtRef = useRef(0);
   const hideTimerRef = useRef<number | undefined>(undefined);
@@ -102,6 +104,15 @@ export function useAmbientAudio(): UseAmbientAudioResult {
       window.clearTimeout(hideTimerRef.current);
     };
   }, []);
+
+  // a new src makes the element reload, which stops playback — restart it,
+  // but only once sound is already on, so this never fights the autoplay policy
+  useEffect(() => {
+    const audio = audioRef.current;
+    if (!audio || audio.muted) return;
+
+    audio.play().catch(() => {});
+  }, [src]);
 
   return { audioRef, muted, toastVisible };
 }

@@ -1,23 +1,86 @@
 import type { Moment } from "@/types/moment";
 
-// TODO: drop the real tracks in /public and point `song` at them.
-// Any card without a `song` simply ignores the double-click.
+// Tracks live in /public/audio. Any card without a `song` ignores the double-click.
 export const moments: Moment[] = [
   {
+    id: "usaa-graduation",
+    date: "August 2026",
+    title: "Bittersweet",
+    description: "10 weeks in a blink",
+    image: "/moments/usaagraduation.jpg",
+  },
+  {
+    id: "last-time-in-texas",
+    date: "August 2026",
+    title: "Last Time in Texas",
+    description: "helping me move out",
+    image: "/moments/lasttimeintexas.jpg",
+  },
+  {
+    id: "blackstar",
+    date: "July 2026",
+    title: "Blackstar",
+    description: "hike",
+    image: "/moments/jasonrichardhike.jpg",
+  },
+  {
     id: "usaa",
-    date: "Summer 2026",
+    date: "May 2026",
     title: "USAA, San Antonio Trip",
-    description:
-      "business expense",
-    image: "/sanantoniointerns.png",
-    song: "/Clouds.mp3",
+    description: "business expense",
+    image: "/moments/sanantoniointerns.png",
+    song: "/audio/clouds.mp3",
   },
   {
     id: "riverwalk",
-    date: "Summer 2026",
+    date: "May 2026",
     title: "San Antonio Riverwalk",
     description: "exploring",
-    image: "/riverwalksanantonio.png",
+    image: "/moments/riverwalksanantonio.png",
+  },
+  {
+    id: "intern-first-day",
+    date: "May 2026",
+    title: "First Day",
+    description: "nervous but excited",
+    image: "/moments/firstdayusaa.png",
+  },
+  {
+    id: "pre-internship-meal",
+    date: "May 2026",
+    title: "Pre-Internship Meal",
+    description: "last meal with uci friends before the internship",
+    image: "/moments/preinternshipmeal.jpg",
+    // wide table shot — cropping to fill cuts the ends of the table off
+    imageFit: "contain",
+  },
+  {
+    id: "pinoyport",
+    date: "May 2026",
+    title: "PinoyPort",
+    description: "proud of the team and happy that they all learned!",
+    image: "/moments/pinoyport.jpg",
+  },
+  {
+    id: "san-diego",
+    date: "May 2026",
+    title: "San Diego",
+    description: "new chapter",
+    image: "/moments/sandiego.jpg",
+  },
+  {
+    id: "sand-dune",
+    date: "May 2026",
+    title: "Sand Dunes",
+    description: "sunrise",
+    image: "/moments/sanddune.png",
+  },
+  {
+    id: "sand-dune-crew",
+    date: "May 2026",
+    title: "Sand Dunes",
+    description: "in the moment",
+    image: "/moments/sanddunes2.jpg",
   },
   {
     id: "fusion",
@@ -25,61 +88,113 @@ export const moments: Moment[] = [
     title: "Fusion ICS Project",
     description:
       "led an 8-person team to design and ship a full-stack app over the course of 9 months, best ux award",
-    image: "/fusionspeaking.png",
-  },
-  {
-    id: "cutie-hacks-win",
-    date: "April 2025",
-    title: "Best Social Impact",
-    description:
-      "first hackathon win!",
-    image: "/hackathonwin.png",
-    // the award slide sits just left of center
-    imagePosition: "44% 40%",
-  },
-  {
-    id: "michigan",
-    date: "Summer 2024",
-    title: "Last Time in Michigan",
-    description:
-      "the beginning of the end",
-    image: "/lasttimeinmichigan.png",
+    image: "/moments/fusionspeaking.png",
   },
   {
     id: "crystal-cove",
     date: "March 2026",
     title: "Crystal Cove",
     description: "whatta beaut",
-    image: "/crystalcovebeach.png",
+    image: "/moments/crystalcovebeach.png",
+  },
+  {
+    id: "cutie-hacks-win",
+    date: "November 2025",
+    title: "Best Social Impact",
+    description: "first hackathon win!",
+    image: "/moments/hackathonwin.png",
+    // the award slide sits just left of center
+    imagePosition: "44% 40%",
+  },
+  {
+    id: "ai-uci",
+    date: "September 2025",
+    title: "AI @ UCI",
+    description: "the team",
+    image: "/moments/aiuci.jpg",
+    // 16:9 group panorama — filling a tall card cuts most of the team out
+    imageFit: "contain",
   },
   {
     id: "laguna-spot",
-    date: "2025",
+    date: "July 2025",
     title: "The Laguna Spot",
     description: "motivating",
-    image: "/lagunabeachspot.png",
+    image: "/moments/lagunabeachspot.png",
   },
   {
-    id: "laguna-purple",
+    id: "design-uci",
+    date: "June 2025",
+    title: "Design @ UCI",
+    description: "crosswalk — 2nd overall and audience choice",
+    image: "/moments/designuciwin.jpg",
+  },
+  {
+    id: "pity-party",
     date: "2025",
-    title: "Laguna, Purple Hour",
-    description: "sunrise",
-    image: "/lagunabeachpurple.png",
+    title: "Something in the Universe",
+    description:
+      "been listening to this song since middle school, finally caught it live in la",
+    image: "/moments/pityparty.png",
+  },
+  {
+    id: "michigan-ski",
+    date: "December 2024",
+    title: "Back in Michigan",
+    description: "skiing with the homies",
+    image: "/moments/michiganski.jpg",
   },
   {
     id: "jason-kevin",
     date: "December 2024",
     title: "Good Company",
     description: "brotha",
-    image: "/jasonkevinbeach.png",
+    image: "/moments/jasonkevinbeach.png",
     // center sits in the gap between you two — shift right to catch both
     imagePosition: "60% 45%",
   },
   {
-    id: "sand-dune",
-    date: "2025",
-    title: "Sand Dunes",
-    description: "sunrise",
-    image: "/sanddune.png",
+    id: "laguna-purple",
+    date: "November 2024",
+    title: "Laguna, Purple Hour",
+    description: "beaut",
+    image: "/moments/lagunabeachpurple.png",
+  },
+  {
+    id: "la-sunrise",
+    date: "October 2024",
+    title: "LA Sunrise",
+    description: "all nighter",
+    image: "/moments/lasunrise.jpg",
+  },
+  {
+    id: "tomfoolery",
+    date: "October 2024",
+    title: "Tomfoolery",
+    description: "shenanigans",
+    image: "/moments/tomfooleryoctober.jpg",
+  },
+  {
+    id: "michigan",
+    date: "Summer 2024",
+    title: "Last Time in Michigan",
+    description: "the beginning of the end",
+    image: "/moments/lasttimeinmichigan.png",
+  },
+  {
+    id: "high-school-graduation",
+    date: "May 2024",
+    title: "High School Graduation",
+    description: "first family photo in 12 years",
+    image: "/moments/highschoolgraduation.png",
+  },
+  {
+    id: "rock-grinding",
+    date: "January 2024",
+    title: "Rock Grinding with Me",
+    description: "i miss rock - ex-cat dad",
+    image: "/moments/rockgrinding.png",
+    // wide desk shot — filling the card crops rock or the monitor out
+    imageFit: "contain",
   },
 ];

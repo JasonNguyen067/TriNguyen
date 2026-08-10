@@ -3,7 +3,6 @@ import Goals from "@/components/sections/Goals";
 import { navNumber } from "@/lib/navigation";
 
 export const metadata: Metadata = {
-  title: "Goals — Jason Nguyen",
   description: "What I'm chasing this year, with the numbers attached.",
 };
 

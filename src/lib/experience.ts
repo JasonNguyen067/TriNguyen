@@ -4,7 +4,7 @@ export const experiences: Experience[] = [
   {
     id: "usaa",
     kind: "work",
-    period: "May 2026 — Present",
+    period: "May 2026 — Aug 2026",
     company: "USAA",
     role: "Software Engineering Intern",
     description:
@@ -22,16 +22,16 @@ export const experiences: Experience[] = [
   {
     id: "playtime",
     kind: "work",
-    period: "Oct — Dec 2025",
+    period: "Oct 2025 — Dec 2025",
     company: "Playtime Planning",
     role: "Software Engineering Intern",
     description:
-      "Helped parents discover after-school activities for their kids — tuned the AI assistant to 18% better answer accuracy and rebuilt desktop-only views for mobile.",
+      "Helped create a website so parents discover after-school activities for their kids",
   },
   {
     id: "cacheai",
     kind: "work",
-    period: "Jul — Sep 2025",
+    period: "Jul 2025 — Sep 2025",
     company: "Cache.AI",
     role: "Backend Engineering Intern",
     description:
