@@ -13,6 +13,23 @@ const entries: JournalEntry[] = [
       ],
   },
   {
+    slug: "michigan",
+    date: "2026-08-09",
+    title: "the one variable",
+    summary: "same gpa, same ap load, one difference that wasn't luck",
+    tags: ["growth", "reflection"],
+    body: [
+      "one of my closest friends and i both got waitlisted at michigan. " +
+        "same gpa, same ap load, same odds on paper. " +
+        "he had studied three months straight, jumped over 200 points, and landed a 1500 — one of six people in our whole school who cleared it. " +
+        "his act came back a 33.",
+
+      "i studied too — hours one night, then nothing for a few days, then nothing for a week. " +
+        "he got off the waitlist. i didn't. " +
+        "everything on our applications matched except the one variable i didn't work hard to change costed me everything",
+    ],
+  },
+  {
     slug: "growth",
     date: "2026-08-07",
     title: "texas",

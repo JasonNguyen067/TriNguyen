@@ -41,13 +41,8 @@ export const principles: Principle[] = [
     title: "honesty",
     thesis: "you can't grow without accepting your flaws",
     note:
-      "one of my closest friends and i both got waitlisted at michigan. " +
-      "same gpa, same ap load, same odds on paper. " +
-      "he had studied three months straight, jumped over 200 points, and landed a 1500 — one of six people in our whole school who cleared it. " +
-      "his act came back a 33. " +
-      "i studied too — hours one night, then nothing for a few days, then nothing for a week. " +
-      "he got off the waitlist. i didn't. " +
-      "everything on our applications matched except the one variable i'd chosen not to control, and calling it luck would have cost me the lesson.",
+      "i'm constantly reflecting. " +
+      "when you can't accept flaws or lapses in judgement, you fail to grow as a person.",
   },
   {
     id: "inspiration",
