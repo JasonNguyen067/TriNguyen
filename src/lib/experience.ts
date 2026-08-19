@@ -2,6 +2,24 @@ import type { Experience } from "@/types/experience";
 
 export const experiences: Experience[] = [
   {
+    id: "uvsa-it-coordinator",
+    kind: "work",
+    period: "Aug 2026 — Present",
+    company: "UVSA",
+    role: "IT Coordinator (Software Engineering Lead)",
+    description:
+      "Lead 5 developers across 3 software projects, overseeing technical direction for UVSA.org, the financial management platform, and the internal operations platform.",
+  },
+  {
+    id: "uvsa",
+    kind: "work",
+    period: "Aug 2025 — Jul 2026",
+    company: "UVSA",
+    role: "Software Engineering Intern",
+    description:
+      "0-to-1 development of uvsa.org, serving 5,000+ members across 12 universities.",
+  },
+  {
     id: "usaa",
     kind: "work",
     period: "May 2026 — Aug 2026",
@@ -9,15 +27,6 @@ export const experiences: Experience[] = [
     role: "Software Engineering Intern",
     description:
       "Internal infrastructure tooling for discovering and governing 2,000+ Kafka topics, backed by Spring Boot APIs over 10M+ records. Used by banking and other product teams across USAA.",
-  },
-  {
-    id: "uvsa",
-    kind: "work",
-    period: "Aug 2025 — Jun 2026",
-    company: "UVSA",
-    role: "Software Engineering Intern",
-    description:
-      "0-to-1 development of uvsa.org, serving 5,000+ members across 12 universities.",
   },
   {
     id: "playtime",
@@ -32,12 +41,21 @@ export const experiences: Experience[] = [
     id: "cacheai",
     kind: "work",
     period: "Jul 2025 — Sep 2025",
-    company: "Cache.AI",
-    role: "Backend Engineering Intern",
+    company: "CacheAI",
+    role: "Backend Software Engineering Intern",
     description:
       "Internal developer tooling and API endpoints for interview scheduling, with 40+ Postman suites that cut staging bugs by 60%.",
   },
 
+  {
+    id: "ics32-la",
+    kind: "involvement",
+    period: "Incoming Fall 2026",
+    company: "UC Irvine",
+    role: "ICS 32 Learning Assistant",
+    description:
+      "Supporting students during lecture, and grading exams.",
+  },
   {
     id: "fusion-pinoyport",
     kind: "involvement",
