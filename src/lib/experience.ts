@@ -57,6 +57,15 @@ export const experiences: Experience[] = [
       "Supporting students during lecture, and grading exams.",
   },
   {
+    id: "anteater-api",
+    kind: "involvement",
+    period: "Mar 2026 — Present",
+    company: "AntEater API",
+    role: "API Engineer",
+    description:
+      "Contributor to the open-source API serving UCI course and campus data.",
+  },
+  {
     id: "fusion-pinoyport",
     kind: "involvement",
     period: "Nov 2025 — May 2026",
