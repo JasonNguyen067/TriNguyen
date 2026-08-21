@@ -5,7 +5,7 @@ import type { Project } from "@/types/project";
 export const projects: Project[] = [
   {
     id: "antalmanac",
-    title: "AntAlmanac",
+    title: "AntAlmanac Planner",
     tagline: "Course discovery and planning for UCI students.",
     period: "Nov 2025 — Present",
     role: "Full Stack Developer",
@@ -17,6 +17,7 @@ export const projects: Project[] = [
       { value: "1,700 min", label: "User wait saved / month" },
     ],
     tech: ["TypeScript", "Next.js", "tRPC", "Drizzle", "PostgreSQL", "Redux"],
+    links: [{ label: "Live site", href: "https://antalmanac.com/planner" }],
   },
   {
     id: "pinoyport",
@@ -48,6 +49,7 @@ export const projects: Project[] = [
       { value: "120+", label: "Hackathon competitors" },
     ],
     tech: ["Express.js", "PostgreSQL", "AWS S3", "Gemini OCR"],
+    links: [{ label: "Devpost", href: "https://devpost.com/software/spoilsafe" }],
   },
   {
     id: "quanttrade",
