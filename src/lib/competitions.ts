@@ -28,4 +28,8 @@ export const competitions: Competition[] = [
 ];
 
 /** hackathons entered without placing — listed, not awarded */
-export const otherEvents = ["FullyHacks 2025", "CitrusHacks 2025"];
+export const otherEvents = [
+  "Swans Applied AI Hackathon 2026",
+  "FullyHacks 2025",
+  "CitrusHacks 2025",
+];
