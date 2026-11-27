@@ -48,11 +48,20 @@ export const experiences: Experience[] = [
   },
 
   {
+    id: "ics46-la",
+    kind: "involvement",
+    period: "Incoming Winter 2027",
+    company: "UC Irvine",
+    role: "ICS 46 (Data Structures & Algorithms) Learning Assistant",
+    description:
+      "Supporting students during lecture, and grading exams.",
+  },
+  {
     id: "ics32-la",
     kind: "involvement",
-    period: "Incoming Fall 2026",
+    period: "Sep 2026 — Dec 2026",
     company: "UC Irvine",
-    role: "ICS 32 Learning Assistant",
+    role: "ICS 32 (Programming with Software Libraries) Learning Assistant",
     description:
       "Supporting students during lecture, and grading exams.",
   },
