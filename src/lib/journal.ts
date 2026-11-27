@@ -49,7 +49,7 @@ const entries: JournalEntry[] = [
 
         "i felt the mental gains climb. " +
           "i became much calmer, able to think through my thoughts and my decisions again.",
-          "something i felt like i had lost since coming into college, and pledging a fraternity"
+          "something i felt like i had lost since coming into college"
       ],
   },
   {
