@@ -2,6 +2,44 @@ import type { JournalEntry } from "@/types/journal";
 
 const entries: JournalEntry[] = [
   {
+    slug: "sanity",
+    date: "2026-11-10",
+    title: "sanity",
+    summary: "what i cut to get more time was what kept me sane",
+    tags: ["growth", "reflection"],
+    body: [
+      "last year i tried to do everything at once. " +
+        "recruiting, chasing good grades, taking a heavy load of units to graduate early. " +
+        "it all overwhelmed me.",
+
+      "i thought sleeping later and skipping the gym would buy me extra time. " +
+        "instead, cutting sleep and the gym removed my only forms of sanity. " +
+        "not going out removed the experiences.",
+
+      "i also forgot how important it is to take care of your health. " +
+        "last year i was hospitalized for palpitations. i genuinely thought i was having a heart attack. " +
+        "so many nights i couldn't figure out why i could only fall asleep after a couple hours, " +
+        "and only sleep for up to 5 hours at a time. " +
+        "when i asked the doctor why i was getting them, he said, " +
+        "\"your mind doesn't believe you're stressed, but your body knows.\" " +
+        "it was the culmination of the stress piling up. " +
+        "burnout is real. putting your head down and grinding can only be sustained for so long.",
+
+      "this year i tried to build balance. " +
+        "instead of studying just for exams, i went down rabbit holes in my classes, " +
+        "digging into deeper concepts that weren't even tested, especially in the ones that matter like operating systems.",
+
+      "outside of class, i added cardio on top of lifting and started playing basketball for hours on end. " +
+        "my vert went up a bit, my abs started showing more, and my face slimmed out. " +
+        "i made more friends from the courts and came away with a healthier mindset.",
+
+      "it paid off. a real understanding of the material, a good midterm score, and i kept my sanity. " +
+        "because i was always asking questions during and after class, i built a good relationship with professor nalini, " +
+        "and got into her graduate cs 230 distributed systems course for next quarter. " +
+        "maybe one day i'll ask her about research.",
+    ],
+  },
+  {
     slug: "health",
     date: "2026-09-07",
     title: "coming soon",
